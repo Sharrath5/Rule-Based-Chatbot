@@ -1,0 +1,694 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","Hi" ,"hai","Need info", "need information", "need help","anyone there"],
+         "responses": ["Hello, thanks for asking", "How can I help you" , "Hi there, how can I help?" , "Thanks for reaching out! What brings you to our site today?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time","tata"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": ["" ," "],
+         "responses": ["Sorry, can't understand you", "Please give me more information", "Not sure I understand","Can you be more specific on your question"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I am St.Clair bot, I can guide you through academic and general queries"],
+         "context": [""]
+        },
+        {"tag": "Tuition and Fees",
+         "patterns": ["Fee","Fees","How much should I pay","How much is the fee","How much is the fees","Fees structure","How can I pay my fees","How can I make the payment","Fee structure","Make a payment","How much does the course cost","Cost of course","Tuition fee","Tuition fees"],
+         "responses": ["Each course has a different course structure based on the duration and the domain of study. For more information, please click the link"],
+         "context": [""]
+        },
+     {"tag": "Room and Board Related Expenses",
+         "patterns": ["Dorm room","Room","Place to stay","Rooms within the campus","On-campus residence"],
+         "responses": ["On-campus residence: $6,500 per year (8 months) including cable TV and high-speed internet access. Meals are not included. Off-campus housing: $400 - $800/month. For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "General Cost Information",
+         "patterns": ["Living expenses","Total expenses in Canada","How much would it cost to live in Canada"],
+         "responses": ["Most students budget approximately $20,000 to $24,000 annually to study and live in Windsor, Canada."],
+         "context": [""]
+        },
+        {"tag": "Full time Program",
+         "patterns": ["Program","Programs","List of Programs","List of Programs available","Full time Program"],
+         "responses": ["St Clair offers 134 full time courses. For the full list of Full time courses, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Part time Program",
+         "patterns": ["List of part time Programs","List of Programs available for part time","Part time Program"],
+         "responses": ["St Clair offers 134 full time courses. For the full list of Part time courses, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Scholarship",
+         "patterns": ["Scholarships","Am I eligible for Scholarships","Students Scholarships","Is there Scholarships available for students"],
+         "responses": ["Scholarships are available to full-time students who have a satisfactory academic standing (minimum GPA of 2.0 and higher) and for international students who have completed the Accuplacer Assessment. The General Scholarship application is available each year from October 1 until end of December. For more information, please click the link"],
+         "context": [""]
+        },
+    {"tag": "Parking Services",
+         "patterns": ["Are there parking services available","Can I park my car inside college","Is car park available","Is college providing parking service","How much should I pay for parking","Is parking available","Is car park there"],
+         "responses": ["St. Clair College South and Chatham campuses are paid parking facilities. Parking services can be paid through the purchase of a Pay Station Permit ,or purchasing a Parking Permit. For more information, please click the link"],
+         "context": [""]
+        },
+    {"tag": "Library",
+         "patterns": ["Is there a library available","Library services","Library","Where is the library"],
+         "responses": ["St.Clair offers Winter Virtual Library Hours: Monday - Friday: 8:00am - 9:00pm. For more information, please click the link"],
+         "context": [""]
+        },
+    {"tag": "IT service and helpdesk",
+         "patterns": ["Why is blackboard not working","not able to access blackboard","IT services","IT service helpdesk","Technical issues","support issues","technical support"],
+         "responses": ["If you have any support issues, please enter a ticket via the mySt.Clair portal and choose the IT Help Desk tile or call 519-972-2727 ext 2500. For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Social Insurance Number",
+         "patterns": ["what is SIN", "what does SIN mean ", "SIN ", "what is SIN number", "What is canada SIN" , "Social Insurance Number", "What is Social Insurance Number", "information about Social Insurance Number", "what does SIN stand for", "meaning of SIN", "Give some information about SIN"],
+         "responses": ["The Social Insurance Number (SIN) is a 9-digit number issued in Canada to administer various government programs. A SIN is issued to one person only and it cannot legally be used by anyone else. For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "How to apply Social Insurance Number",
+         "patterns": ["Where to get SIN","Where to get Social Insurance Number","How to get SIN","How to apply for SIN","Ways to apply SIN","How do I get SIN number","Methods to apply SIN","Get SIN number"],
+         "responses": ["You can apply SIN through online or by mail or in person.You can apply the SIN by clicking on the link"],
+         "context": ["How to apply"]
+        },
+        {"tag": "Where to get SIN",
+         "patterns": ["Where to you go for SIN","Where to get SIN","Where to get Social Insurance Number","Where should I go to get SIN","SIN provider","Maps for SIN","Where do I get SIN","Directions for SIN","place to get SIN"],
+         "responses": ["Complete a service request form online and a Service Canada officer will call you back within two business days. For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Documents required for SIN",
+         "patterns": ["What should I have to get SIN","Documents required for SIN","What should I carry to get SIN","SIN requirements","Social Insurance Number requirements","Requirements for SIN number"],
+         "responses": ["You must provide original documents; photocopies are not accepted. In order to determine which documents you must provide, please refer the link"],
+         "context": [""]
+        },
+        {"tag": "Nearest Service Canada",
+         "patterns": ["Nearest Service Canada","Service Canada near me"],
+         "responses": ["If your request cannot be completed over the phone, you will be offered an appointment to visit a Service Canada Centre. For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Guaranteed Investment Certificate",
+         "patterns": ["Bank account","Opening an account","Open a bank account","How to open a bank account in Windsor","GIC","Guaranteed Investment Certificate"],
+         "responses": ["A GIC is a Canadian investment that has a guaranteed rate of return for a fixed period of time. Many banks offer GICs. For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Mobile Network SIM card",
+         "patterns": ["Which is the best sim card","Affordable sim cards for students","Which is the best mobile plan","Suitable mobile plan","Rates for each plan","Best SIM suitable rates for students"],
+         "responses": ["Canada is known for having very expensive phone plans, especially when it comes to data. Please follow this link for the best student offers"],
+         "context": [""]
+        },
+        {"tag": "Covid-19 Related Information",
+         "patterns": ["What are the current covid restriction","is it safe around the campus","Covid-19","Covid","what are the virus restrictions","coronavirus","coronavirus related information"],
+         "responses": ["COVID-19 Instuctions are updated based on Ontario public health authorities on regualr basis.For all inquiries please contact Covid19@stclaircollege.ca. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Medical Insurance",
+         "patterns": ["What is Medical Insurance","International student health insurance","International student medical insurance"],
+         "responses": ["The College includes registration with a Canadian Medical Insurance Provider as part of tuition costs and is effective from 1st month when the program begins. CampusCare offers the protection for International students while studying in Canada.For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "How to download the Medical insurance card",
+         "patterns": ["Medical Insurance card download","Where to download Medical insurance card","Download Medical card"],
+         "responses": ["Login into the campus care site to download the medical insurance card. Please follow the link"],
+         "context": [""]
+        },
+	{"tag": "Contact Information Medical Insurance",
+         "patterns": ["Whom to contact to get medical Insurance card","Where I can find the information about medical Insurance","Medical Insurance details","clarifications on medical card","Question regarding medical insurance card"],
+         "responses": ["Toll Free (Canada & United States): 1-866-595-7171. If you need further assistance or have any questions, email at: campuscareclaim@active-care.ca."],
+         "context": [""]
+        },
+	{"tag": "Drivers License Details",
+         "patterns": ["Where do we get driver license","where to get drivers license","where to go for license","driving license"],
+         "responses": ["You can get driving license by visiting Windsor DriveTest Centre at Windsor in dougall avenue. Please check the timings before you visit the center. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Data Analytics for Business",
+         "patterns": ["DAB","B018","M018","Data Analytics","Analytics for Business","Data Science","Any course related to data analytic","Do we have program related to data science","Data Analytics program","Data Science program"],
+         "responses": ["St. Clair College offers Post graduate Data Analytics for Business Program. This program prepares students with Machine Learning skills and visualization to convert the data into meaningful ways. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "ACE",
+         "patterns": ["Career related programs","Academic Career Entrance","ACE","Academic and Career Entrance (ACE) Certificate","equivalent to a Grade 12 Diploma"],
+         "responses": ["This program is perfect for people who need the admission requirements to apply to a college program, to upgrade their workplace skills, or begin apprenticeship training. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "ace-cep",
+         "patterns": ["Academic Career Entrance Employment","Employment Preparation","Academic & Career Entrance and College & Employment Preparation"],
+         "responses": ["This program is perfect for people who need the admission requirements to apply to a college program, to upgrade their workplace skills, or begin apprenticeship training. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Advanced Medical Esthetics Practitioner",
+         "patterns": ["Advanced Medical Esthetics Practitioner","Esthetics Practitioner","promoting and maintaining healthy skin"],
+         "responses": ["The Advanced Medical Esthetics Practitioner Graduate Certificate Program will prepare the graduate to work in the progressive field of medical esthetics. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Advertising & Marketing Communications Management",
+         "patterns": ["Advertising & Marketing Communications Management","Advertising","Marketing Communications Management"],
+         "responses": ["This program prepares Students for digital marketing to consumers using interactive platforms such as Facebook, Instagram, Twitter, mobile devices. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Animation 2D/3D",
+         "patterns": ["Animation 2D/3D","Animation"],
+         "responses": ["Students learn a blend of traditional techniques with the use of cutting-edge industry software.Students also learn to become proficient with digital image manipulation, digital video editing, compositing and file management.For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Architectural Technology",
+         "patterns": ["Architectural Technology","construction drawings","building design"],
+         "responses": ["For more information, please click the link"],
+         "context": ["An Architectural Technologist assists the architect or engineer in the assembly of drawings and documents for residential, commercial and industrial projects.The graduate is involved with building design, construction drawings, project estimating, and construction specifications. For more information, please click the link"]
+        },
+	{"tag": "Autism and Behavioural Science",
+         "patterns": ["Autism & Behavioural Science","Autism","Behavioural Science","autism spectrum disorder"],
+         "responses": ["This full-time program provides students with a well-rounded opportunity to further their undergraduate studies in order to work effectively as an integral member of a services delivery team who supports individuals with autism and autism spectrum disorders.For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Autism and Behavioural Science-part time",
+         "patterns": ["Part time program for Autism & Behavioural Science"],
+         "responses": ["Part-time graduate certificate program provides the skill and independence in the areas of assessment and treatment of autism spectrum disorder.For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Biomedical",
+         "patterns": ["Biomedical Engineering Technology Equipment and Devices","Biomedical Equipment and Devices","Biomedical Engineering Technology","Biomedical Engineering Technology Program"],
+         "responses": ["As an interdisciplinary program, BMET teaches students the principles of engineering and how to integrate them with healthcare concepts.Students can expect to learn about various pieces of hospital equipment including how to troubleshoot, repair, and maintain that equipment.For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Border Services",
+         "patterns": ["Border Services","Program related to Border Services","Program offered on Border Services"],
+         "responses": ["The Border Services diploma program provides a foundational knowledge in customs, immigration and food inspection. Students will become familiar with the pertinent legislation, procedures, and documentation required to move people and goods across the border. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Border Services Fast Track",
+         "patterns": ["Border Services (Fast Track)","Fast Track Border Services","Fast Track program for Border Services" ],
+         "responses": ["The Border Services diploma program provides a foundational knowledge in customs, immigration and food inspection. Students will become familiar with the pertinent legislation, procedures, and documentation required to move people and goods across the border. For more information, please click the link.For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Business",
+         "patterns": ["Business","Program for Business","Business Program","Business courses"],
+         "responses": ["Graduates of the Business program will be able to carry out a variety of business functions and Students will obtain a practical comprehension of key principles and practices necessary for success in the field of business. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Business Accounting",
+         "patterns": ["Business Accounting"," Business Accounting program","Accounting with Business"],
+         "responses": ["The Business Accounting two-year program provides students with a solid background in accounting and bookkeeping from a broad business perspective. For more information, please click the link"],
+         "context": [""]
+        },
+         {"tag": "Business Marketing",
+         "patterns": ["Business Marketing"," Business Marketing program","Marketing with Business"],
+         "responses": ["This Program helps the Graduates will gain knowledge of the new technology being utilized in marketing and will learn the intricacies of marketing research. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Business Administration Accounting",
+         "patterns": ["Business Administration Accounting","Business with Administration Accounting"],
+         "responses": ["The Business Administration - Accounting three-year program provides a well-rounded curriculum of accounting theory and practical applications leading to a wide range of career possibilities. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Business Administration Finance",
+         "patterns": ["Business Administration Finance","Business with Finance Administration"],
+         "responses": ["Students will be given an in-depth education on various areas of this industry, including Canadian securities, insurance products, and personal financial planning, along with the marketing skills needed to sell financial services and products. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Business Administration Human Resources",
+         "patterns": ["Business Administration Human Resources","Business Administration with Human Resources"],
+         "responses": ["Human Resources is a highly dynamic field and graduates are prepared to handle recruiting, payroll and benefits. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Business Administration Marketing",
+         "patterns": ["Business Administration Marketing","Business program with Marketing Administration","Marketing Administration"],
+         "responses": ["The Business Administration – Marketing program enables students to learn about key management skills and the promotion of products, companies and businesses. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Cardiovascular Technology",
+         "patterns": ["Cardiovascular Technology","Cardiovascular","Technology of Cardiovascular"],
+         "responses": ["In this program Students learn to use a variety of monitoring devices and other equipment for electrocardiography, multi-stage stress testing, Holter and ambulatory monitor analysis, tilt table testing, pacemaker evaluation and blood pressure analysis. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Carpentry and Renovation Techniques",
+         "patterns": ["Carpentry and Renovation Techniques","Program related to Carpentry and Renovation Techniques"],
+         "responses": ["This program provides the student with a solid foundation in areas closely connected to the construction and renovation industry. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Chemical Laboratory Technology",
+         "patterns": ["Chemical Laboratory Technology","Chemical Laboratory"],
+         "responses": ["This program provides graduates with knowledge in the core sciences as well as problem-solving fundamentals for chemistry, biochemistry, physics, and math. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Child and Youth Care",
+         "patterns": ["Child and Youth Care","Youth Care","Child Care"],
+         "responses": ["Students are provided with the skills and knowledge necessary to build therapeutic relationships and facilitate change with children, youth, and families experiencing a wide range of often complex social, emotional, behavioural, and mental health challenges. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Child and Youth Care Accelerated",
+         "patterns": ["Child and Youth Care Accelerated","Accelerated programs with Child and Youth Care"],
+         "responses": ["This post graduate program provides individuals with an opportunity to complete the three year Child and Youth Care diploma program in an intensive eleven month time frame building upon their prior learning. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Civil Engineering Technology",
+         "patterns": ["Civil Engineering Technology","Civil Engineering","Civil Technology"],
+         "responses": ["Civil Engineering Technologists, as members of the engineering design team, may be involved in various phases of a construction project, including the planning, design, construction, and maintenance of buildings and infrastructure. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Community Justice Services",
+         "patterns": ["Community & Justice Services","Community Services","Justice Services"],
+         "responses": ["This program is designed to prepare students for front-line careers in the justice system with attention to custody, risk assessment, case management, intervention strategies, and re-integration. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Community Integration through Cooperative Education",
+         "patterns": ["Community Integration through Cooperative Education","Community Integration with Cooperative Education","Community Integration and Cooperative Education"],
+         "responses": ["This program is designed to provide individuals with developmental disabilities and other significant learning challenges with the opportunity to experience college life, pursue a postsecondary education and develop skills that will help them prepare for employment. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Networking",
+         "patterns": ["Computer Systems Technician Networking","Networking and Computer Systems Technician"],
+         "responses": ["Graduates are trained to provide technical support for computer users in a business environment. This program will appeal to students who are problem solvers with good analytical skills. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Construction Engineering Technician",
+         "patterns": ["Construction Engineering Technician","Construction Technician"],
+         "responses": ["This program contains duties include estimating, testing or inspecting materials, performing construction surveys, interpreting and applying specifications and executing sketches from contract drawings, shop and CAD drawings. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Construction Project Management",
+         "patterns": ["Construction Project Management","Project Management in Construction"],
+         "responses": ["CPM program will teach students how to plan, budget, manage, and supervise a broad range of construction projects within the residential, industrial, commercial, institutional, and civil infrastructure sectors of the construction industry. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Culinary Management",
+         "patterns": ["Culinary Management","Culinary"],
+         "responses": ["In this program students learn basic cooking fundamentals, baking skills and gain a practical knowledge of food safety and sanitation. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Dental Assisting",
+         "patterns": ["Dental Assisting","Dental Assisting level 1 and 2","Dental Assisting Level I & II"],
+         "responses": ["This program prepares students to assume a position as a dental assistant / intra-oral health care provider, capable of working with health professionals in a variety of settings. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Dental Hygiene",
+         "patterns": ["Dental Hygiene","Dental Hygiene Program"],
+         "responses": ["The practice of dental hygiene is the assessment of teeth and adjacent tissues, treatment by preventive and therapeutic means, and the provision of restorative and orthodontic procedures and services. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Developmental Services Worker",
+         "patterns": ["Developmental Services Worker","Programs offered for Developmental Services Worker","Developmental Worker Program"],
+         "responses": ["Developmental Services Worker graduates specialize in supporting people with developmental and intellectual disabilities of all ages, in all aspects of life in their communities. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Early Childhood Education",
+         "patterns": ["Early Childhood Education","Early Childhood Education Program"],
+         "responses": ["Graduates of this program can be part of the licensed child care team supporting young children in infant, toddler, preschool or school age classrooms in developing thinking, learning, communication, physical, social and emotional skills. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Diagnostic Medical Sonography",
+         "patterns": ["Diagnostic Medical Sonography","Diagnostic Sonography","Medical Sonography"],
+         "responses": ["Utilizing advanced knowledge of cross-sectional anatomy, pathology, and physical applications, a sonographer performs examinations to provide diagnostic ultrasound images for interpretation by a medical radiologist. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Earn While You Learn",
+         "patterns": ["Earn While You Learn","CNC machinist", "tool or mold maker"],
+         "responses": ["St. Clair College provides you with opportunities to kick start your career, especially in the skilled trades. If you’re looking for a career as a CNC machinist, tool or mold maker, then this unique Earn While You Learn program is the perfect place to start. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Educational Support",
+         "patterns": ["Educational Support","Educational Support Program"],
+         "responses": ["This program will prepare you to work in concert with education professionals in the classroom to maximize learning opportunities for exceptional students and their families. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Electrical Engineering Technician",
+         "patterns": ["Electrical Engineering Technician","Electrical Engineering"],
+         "responses": ["The Electrical Engineering Technician program prepares graduates to apply electrical theory and related knowledge to design, test, troubleshoot and modify electrical machinery and electrical control equipment. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Electrical Techniques",
+         "patterns": ["Electrical Techniques","Electrical Techniques Program"],
+         "responses": ["Electrical Techniques is designed to provide the learner with an understanding of the basic theoretical and practical aspects of the electrical trade. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Wood Technician",
+         "patterns": ["St. Clair college offer program related to wood technician","Courses related to wood technician"],
+         "responses": ["St. Clair College has wood technician program which focuses on the technical skills in a wide range including cabinet making, trim and construction carpentry, architectural millwork manufacturing and installation (cabinets, custom trim and stairs) and furniture making. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Welding Technician",
+         "patterns": ["St. Clair college offer program related to welding technician","Courses related to welding technician"],
+         "responses": ["The Welding Techniques Program provides graduates with comprehensive theoretical knowledge and extensive practical hands-on skills to find employment in a variety of industries and trades. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Computing and IT Web Development",
+         "patterns": ["St. Clair college offer program related to Computing & IT Web Development","Courses related to Computing & IT Web Development","Computing & IT Web Development Program","Information related to Computing & IT Web Development Program"],
+         "responses": ["Computing and IT Web Development program is a Full Stack Web Developer combines the knowledge and skill sets of a dedicated front-end developer, with the expertise of a back-end developer. (e.g., HTML5, CSS, JavaScript, PHP, C#) and technologies including ASP.NET. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Web Advertising",
+         "patterns": ["St. Clair college offer program related to Web Advertising","Courses related to Web Advertising"],
+         "responses": ["College offer this new program which provides students with the skills to create advertising and integrated marketing communications plans together with the materials and costs for the emerging advertising formats. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Veterinary Technician",
+         "patterns": ["St. Clair college offer program related to Veterinary Technician","Courses related to Veterinary Technician"],
+         "responses": ["This program for students with experience related to animals. They must have a strong background in science and math and good communication skills. Duties include radiography (taking x-rays), nursing, dentistry, nutritional support, minor surgery and laboratory procedures for animals. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Tourism Travel",
+         "patterns": ["St. Clair college offer program related to Tourism Travel","Courses related to Tourism Travel"],
+         "responses": [" This program will help develop skills employers are looking for in a new employee, such as communication, teamwork, computer, and customer service skills. Students who wants to make career as an airline/tour reservationist, flight attendant, cruise ship employee, tour guide, tour manager, event planner, travel counselor, hotel/ resort concierge. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Sport & Recreation Management",
+         "patterns": ["St. Clair college offer program related to Sport & Recreation Management","Courses related to Sport & Recreation Managemen"],
+         "responses": ["The Sport and Recreation Management program prepares students to work in the exciting and interactive business of sport management, sport marketing and recreation related industries. Students will participate in a variety of relevant, practical learning experiences which will culminate in the final semesters of the program with work placement. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Social Service Worker Gerontology",
+         "patterns": ["St. Clair college offer program related to social service worker gerontology","Courses related to social service worker gerontology"],
+         "responses": ["Social Service Worker Gerontology program prepares students with the foundational knowledge and core skills required to work in the diverse and challenging field of eldercare. In addition, a number of specialized courses such as Activation and Restorative Care, Recreation, Leisure and Therapeutic Program Planning, Dementia Care, Adult Development, Death, Dying, Grief and Bereavement and Volunteer Management. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Respiratory Therapy",
+         "patterns": ["St. Clair college offer program related to respiratory therapy","Courses related to respiratory therapy"],
+         "responses": ["Respiratory Therapy program develops the student’s cognitive, effective and psychomotor skills as described in the goals and outcomes of the National Competency Framework for Respiratory Therapy in order to perform as an entry-level Respiratory Therapist. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Public Relations",
+         "patterns": ["St. Clair college offer program related to public relations","Courses related to public relations"],
+         "responses": ["Public relations is a dynamic and exciting field. Public relations specialists are expert communicators who manage and maintain a positive public image for their clients, whether it’s a politician, a large corporation, a non-profit organization or a small business. Students will also learn how to shoot and edit professional photos, develop internal and external corporate communications plans, event plans, sponsorship plans. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Protection Security and Investigation",
+         "patterns": ["St. Clair college offer program related to Protection Security and Investigation","Courses for Protection Security and Investigation"],
+         "responses": ["Protection Security and Investigation program provides general training for work in the various areas of private security, Canadian Border Services, Immigration, federal and provincial correctional services, by-law enforcement, Ministry of Transportation Enforcement Officers, Military Policing as well as other areas of policing. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Protection Security and Investigation Fast Track",
+         "patterns": ["St. Clair college offer program related to Protection Security and Investigation (Fast Track)","Courses for Protection Security and Investigation (Fast Track)","Protection Security and Investigation (Fast Track)"],
+         "responses": ["Protection Security and Investigation (Fast Track) program provides general training for work in the various areas of private security, Canadian Border Services, Immigration, federal and provincial correctional services, by-law enforcement, Ministry of Transportation Enforcement Officers, Military Policing as well as other areas of policing. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "PreService Firefighter Education and Training",
+         "patterns": ["St. Clair college offer program related to preservice firefighter education and training","Courses for preservice firefighter education and training"],
+         "responses": ["PreService Firefighter Certificate program provides students with the knowledge and skills in scientific principles of Education and Fire Prevention in the Community, Fire Behaviour, Fire Ground Operations, Firefighter Emergency Patient Care, Environmental Protection and Rescue Operations as well as Introduction to the Fire Service. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "PreHealth Sciences Pathway to Advanced Diplomas and Degrees",
+         "patterns": ["St. Clair college offer program related to PreHealth Sciences Pathway to Advanced Diplomas and Degrees","Courses for PreHealth Sciences Pathway to Advanced Diplomas and Degrees","PreHealth Sciences Pathway"],
+         "responses": ["PreHealth Sciences Pathway to Advanced Diploma and Degree is one year certificate is designed to give students the necessary skills and course requirements to apply to health science programs at both the Windsor and Chatham campuses. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Practical Nursing",
+         "patterns": ["St. Clair college offer program related to practical nursing","Courses for practical nursing"],
+         "responses": ["Practical Nursing curriculum is comprised of theoretical and clinical experiences utilizing the College of Nurses of Ontario (CNO) conceptual framework and nursing process. This strong foundation prepares students to practice safely, competently and ethically in situations of health and illness with individuals, families, groups and communities across the lifespan.  For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Powerline Technician",
+         "patterns": ["St. Clair college offer program related to powerline technician","Courses for powerline technician"],
+         "responses": ["Powerline Technician program prepares students for a career in power distribution. It will provide in-depth knowledge and skills that will allow students to understand the installation, operation, and maintenance of the distribution system. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Power Engineering Technology Mechanical",
+         "patterns": ["St. Clair college offer program related to Power Engineering Technology - Mechanical","Courses for power engineering technology - mechanical","power engineering technology","power engineering technology - mechanical"],
+         "responses": ["Power Engineering Technologists operate and maintain the energy components of power plants in industrial, commercial and large residential buildings, hospitals and schools. Their work involves monitoring, adjusting, analyzing and solving problems with power boilers, turbines, compressors, refrigeration chillers, pumps and other related equipment. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Power Engineering Techniques",
+         "patterns": ["St. Clair college offer program related to power engineering techniques","Courses related to power engineering techniques"],
+         "responses": ["Power Engineering Techniques program has been developed for those seeking employment as a power engineering technician who operates and troubleshoots the energy components in industrial power plants (chemical, food, pulp and paper etc.), electrical power plants (coal, gas, nuclear, wind, solar, methane, cogeneration, flex fuel etc.), or commercial buildings. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Police Foundations Fast Track",
+         "patterns": ["St. Clair college offer program related to police foundations (Fast Track)","Courses for police foundations (Fast Track)"],
+         "responses": ["Police Foundations (Fast Track) program will appeal to students who are community-minded and are of good moral character. This program presents the knowledge, fitness skills and aptitudes to prepare students for a career in law enforcement. The student will have a strong theoretical foundation on which to build communication, ethical and interpersonal skills. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Police Foundations",
+         "patterns": ["St. Clair college offer program related to police foundations","Courses for police foundations"],
+         "responses": ["Police Foundations program presents the knowledge, fitness skills and aptitudes to prepare students for a career in law enforcement. The student will have a strong theoretical foundation on which to build communication, ethical and interpersonal skills. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Plumbing Techniques",
+         "patterns": ["St. Clair college offer program related to plumbing techniques","Courses for plumbing techniques","Plumbing"],
+         "responses": ["The Plumbing Techniques program is designed to give the student an understanding of the theoretical and practical aspects of the plumbing and pipefitting trades and to familiarize them with the associated tools and materials. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Electromechanical Engineering Technician Robotics",
+         "patterns": ["Electromechanical Engineering Technician Robotics","Program for Electromechanical Engineering Technician with Robotics"],
+         "responses": ["In this program Graduates will be prepared to program, troubleshoot and maintain robots and automated production systems along with mechanical, hydraulic and pneumatic equipment. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Electronics Engineering Technology Industrial Automation",
+         "patterns": ["Electronics Engineering Technology Industrial Automation","program related to Electronics Engineering Technology Industrial Automation"],
+         "responses": ["Electronic engineering technologists assist in the design, programming, manufacture, and operation of electrical/electronic control systems. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "EAP",
+         "patterns": ["English for Academic Purposes (EAP)","EAP"],
+         "responses": ["St. Clair College’s English for Academic Purposes (EAP) certificate program is an intensive, full-time academic pathway program. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Esports Administration and Entrepreneurship",
+         "patterns": ["Esports Administration and Entrepreneurship","Esports Administration","Entrepreneurship"],
+         "responses": ["The Esports Administration and Entrepreneurship Program prepares students to work in the exciting and interactive business of esports. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Esthetician Fast Track",
+         "patterns": ["Esthetician (Fast Track)","Esthetician","Program related to Esthetician","Fast Track program for Esthetician"],
+         "responses": ["Graduates of this program are proficient in facials, specialized skin care and body treatments, manicures, nail enhancement, therapeutic pedicures, hair removal services and basic make-up artistry. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Event Management",
+         "patterns": ["Event Management","Program for Event Management"],
+         "responses": ["This new program will provide students with the skills and knowledge necessary to plan, organize, coordinate, implement and promote special events for the public, corporate and non-profit sectors. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Fashion Design Technician",
+         "patterns": ["Fashion Design Technician","Fashion Design","Program for Fashion Design Technician"],
+         "responses": ["Design, innovate and create are the fundamentals of the Fashion Design program. Simulating industry standards and practices, students will become skilled in the essentials of pattern making and garment construction. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Fitness and Health Promotion",
+         "patterns": ["Fitness and Health Promotion","Fitness & Health Promotion","Health Promotion","Fitness"],
+         "responses": ["This program will provide students with the knowledge, skills and experience required for careers as health and fitness professionals. For more information, please click the link"],
+         "context": [""]
+        },	
+         {"tag": "General Arts and Science",
+         "patterns": ["General Arts & Science","General Arts and Science","Program related to General Arts"],
+         "responses": ["This program updates the academic skills of students still exploring their career and vocational options. The program is aimed at improving the academic foundation for future career or program choices. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Graphic Design",
+         "patterns": ["Graphic Design","Program related to Graphic Design","Graphic program"],
+         "responses": ["This program will appeal to students who are emerging from visual/media arts backgrounds at the high school or post-secondary level, for mature students, and those who have a love of design and visual expression. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Hairstyling",
+         "patterns": ["Hairstyling Fast Track","Hairstyling","Fast Track Program for Hairstyling","Hairstyle Program"],
+         "responses": ["Hairstylists are capable of advanced cutting techniques on both male and female clients, hair textured services (perming and chemical hair relaxing) hair colouring, colour correction, foiling techniques including current colour trends. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Heating Refrigeration",
+         "patterns": ["Heating, Refrigeration & Air Conditioning Technician","Heating, Refrigeration and Air Conditioning Technician","Heating, Refrigeration","Air Conditioning Technician","Program related to Heating, Refrigeration and Air Conditioning Technician"],
+         "responses": ["The Heating, Refrigeration and Air Conditioning Technician program prepares graduates for entry level positions for Apprenticeships in: Air Conditioning, Sheet Metal, Electrical, and Refrigeration Trades. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Social Justice and Legal Studies",
+         "patterns": ["Honours Bachelor of Applied Arts in Social Justice & Legal Studies","Honours Bachelor of Applied Arts in Social Justice","Honours Bachelor of Applied Arts in Legal Studies"],
+         "responses": ["The Honours Bachelor of Applied Arts in Social Justice & Legal Studies four year bachelor degree program combines the foundational knowledge and strengths of various factors. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Honours Bachelor of Business Administration Information Communication Technology",
+         "patterns": ["Honours","Business Administration","Information Communication Technology"],
+         "responses": ["The Honours Bachelor of Business Administration (Information Communication Technology) BBA (ICT) is an undergraduate degree program that focuses on producing business leaders who can facilitate and integrate information communication technology within a highly innovative business environment. For more information, please click the link"],
+         "context": [""]
+        },
+   	 {"tag": "Hospitality Hotel & Restaurant",
+         "patterns": ["Hospitality","Hotel","Restaurant"],
+         "responses": ["This program will prepare graduates for leadership positions in the growing hospitality industry in venues that include hotels, resorts, restaurants, bars, catering and conference centres. For more information, please click the link"],
+         "context": [""]
+        },
+  	  {"tag": "Human Resources Management",
+         "patterns": ["Human Resources Management","HR"],
+         "responses": ["This graduate (post-diploma or post-degree) certificate program is intended for those seeking employment in Human Resources Management or for individuals already in the field. For more information, please click the link"],
+         "context": [""]
+        },
+   	 {"tag": "Interior Design",
+         "patterns": ["Design","Interior","interior space"],
+         "responses": ["Interior designers work with clients to develop design solutions that are aesthetic, technically sophisticated and functional. For more information, please click the link"],
+         "context": [""]
+        },
+   	 {"tag": "International Business Management Logistics Systems",
+         "patterns": ["International Business Management","Logistics"],
+         "responses": ["This two-year post-graduate program in International Business Management - Logistics enables graduates to enter the industry as business professionals. For more information, please click the link"],
+         "context": [""]
+        },
+ 	 {"tag": "Internet Applications and Web Development",
+         "patterns": ["Internet","Web Development"],
+         "responses": ["A Full Stack Web Developer combines the knowledge and skillsets of a dedicated front-end developer, who can manipulate information presented on a website to make it appealing and effective. For more information, please click the link"],
+         "context": [""]
+        },
+ 	 {"tag": "Journalism",
+         "patterns": ["Journalism"],
+         "responses": ["Students looking for a career as a journalist will have the distinction of learning at our new MediaPlex located in downtown Windsor. For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Landscape Horticulture",
+         "patterns": ["Landscape","Horticulture"],
+         "responses": ["One of the fastest growing career industries in Ontario. A Horticulture Technician provides product and service expertise with landscape design and construction including grounds maintenance. For more information, please click the link"],
+         "context": [""]
+        },
+       {"tag": "Liberal Arts",
+         "patterns": ["Liberal Arts"],
+         "responses": ["The Liberal Arts program begins with broad foundational courses in three main fields: Psychology, Sociology, and Philosophy. For more information, please click the link"],
+         "context": [""]
+        },
+       {"tag": "Mechanical Engineering Technician Industrial",
+         "patterns": ["Mechanical Engineering Technician Industrial"],
+         "responses": ["Industrial Mechanics make parts using various hand and machine tools. They perform welding and fabrication, installation of fluid power systems, pumps, valves and piping and possess basic electrical skills. For more information, please click the link"],
+         "context": [""]
+        },
+       {"tag": "Mechanical Engineering Technology Automotive Product Design",
+         "patterns": ["Mechanical Engineering Technology Automotive Product Design"],
+         "responses": ["Mechanical Engineering is the study of the principles of physics for the purpose of harnessing energy for human consumption. For more information, please click the link"],
+         "context": [""]
+        },
+      {"tag": "Mechanical Technician CAD CAM",
+         "patterns": ["CAD","CAM","Mechanical Technician"],
+         "responses": ["CAD/CAM technicians decide how a product is to be manufactured, what types of machines are to be used, and the machining sequence required to manufacture components to industrial standards. For more information, please click the link"],
+         "context": [""]
+        },
+       {"tag": "Mechanical Techniques Precision Metal Cutting",
+         "patterns": ["Mechanical Techniques","Precision Metal Cutting","Mechanical Techniques Precision Metal Cutting"],
+         "responses": ["This one-year certificate program will prepare students to work in the precision machining and tooling industries. For more information, please click the link"],
+         "context": [""]
+        },
+       {"tag": "Media Convergence",
+         "patterns": ["Media Convergence"],
+         "responses": ["St. Clair College’s new Media Convergence program provides students with the multi-skilled tools they require to compete in the ever challenging field of journalism and communications. For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Medical Laboratory Science",
+         "patterns": ["Medical Laboratory Science"],
+         "responses": ["The Medical Laboratory Technologist assesses the types of blood cells and microorganisms that cause disease, provides chemical analysis of blood and body fluids.For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Medical Laboratory Technician",
+         "patterns": ["Medical Laboratory Technician"],
+         "responses": ["Graduates of this program have the basic technical and theoretical skills required to work in healthcare laboratories and assist the Medical Laboratory Technologist in various investigative and clinical laboratory procedures including sample collection and processing. For more information, please click the link"],
+         "context": [""]
+        },
+       {"tag": "Mobile Applications Development",
+         "patterns": ["Mobile Applications Development"],
+         "responses": ["This advanced diploma program is designed for those who are interested in developing mobile applications for smartphones, tablets, and the web. For more information, please click the link"],
+         "context": [""]
+        },
+        {"tag": "Motive Power Technician",
+         "patterns": ["Motive Power Technician"],
+         "responses": ["Motive power technicians will learn to test and analyze systems and vehicles in accordance with the manufacturer's recommendations and specifications. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Pharmacy Technician",
+         "patterns": ["St. Clair college offer program related to pharmacy technician","Courses for pharmacy technician"],
+         "responses": ["Pharmacy Technician graduates have acquired the knowledge and skills that prove entry-level competencies are met as outlined in the National Association of Pharmacy Regulatory Authorities (NAPRA). Pharmacy Technicians collaborate with Pharmacists and other Health Professionals as part of a team to support and promote health and wellness for patients and their healthcare goals. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Personal Support Worker",
+         "patterns": ["St. Clair college offer program related to personal support worker","Courses for personal support worker","personal support worker"],
+         "responses": ["The Personal Support Worker program prepares graduates with the knowledge and skills to provide compassionate, safe and supportive care to individuals across their lifespan including clients experiencing cognitive impairment, physical disability, age and mental health challenges. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Paramedic",
+         "patterns": ["St. Clair college offer program related to paramedic","Courses for paramedic"],
+         "responses": ["A paramedic is at the forefront of emergency health care services in times of accident or crisis. They provide cardiopulmonary resuscitation, defibrillation, cardiac monitoring, pulse oximetry, airway management, administration of life-saving drugs, control of severe bleeding along with immobilization of spine, neck and bone injuries. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Paralegal Accelerated",
+         "patterns": ["St. Clair college offer program related to paralegal accelerated","Courses for paralegal accelerated"],
+         "responses": ["A Paralegal provides legal services to clients within the permitted scope of practice. This includes representing clients in provincial offences court, which includes highway traffic offences, municipal by-law matters, liquor license cases, occupational health and safety issues, as well as civil litigation matters in small claims court. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Paralegal",
+         "patterns": ["St. Clair college offer program related to paralegal","Courses for paralegal"],
+         "responses": ["A Paralegal provides legal services to clients within the permitted scope of practice. This includes representing clients in provincial offences court, which includes highway traffic offences, municipal by-law matters, liquor license cases, occupational health and safety issues, as well as civil litigation matters in small claims court. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Office Administration Health Services (Fast Track)",
+         "patterns": ["St. Clair college offer program related to office administration health services (Fast Track)","Courses for office administration health services (Fast Track)","office administration health services (Fast Track)"],
+         "responses": ["Office administrators in the health services field are vital members of the healthcare team, often the first person to interact with clients in a physician’s office. Graduates are able to work within and manage any health services office with the required comprehensive knowledge and specialized skills. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Office Administration Health Services",
+         "patterns": ["St. Clair college offer program related to office administration health services","Courses for office administration health services","office administration health services"],
+         "responses": ["Office administrators in the health services field are vital members of the healthcare team, often the first person to interact with clients in a physician’s office. Graduates are able to work within and manage any health services office with the required comprehensive knowledge and specialized skills. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Office Administration General",
+         "patterns": ["St. Clair college offer program related to office administration general","Courses for office administration general","office administration general"],
+         "responses": ["Office Administration General program provides a comprehensive foundation for your career as an Office Administrator. Graduates of the one-year Office Administration program, are able to perform a wide variety of office tasks and gain an understanding of Canadian business fundamentals, including business writing. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Office Administration Executive (Fast Track)",
+         "patterns": ["St. Clair college offer program related to office administration executive (Fast Track)","Courses for office administration executive (Fast Track)","office administration executive (Fast Track)"],
+         "responses": ["Graduates of this program have the skills to be executive-level administrative assistants to top-level managers in business or government. Skills include a high level of expertise in keyboarding and computer applications with some accounting. Students will learn how to do effective presentations and be well rounded in all office duties. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Office Administration Executive",
+         "patterns": ["St. Clair college offer program related to office administration executive","Courses for office administration executive","office administration executive"],
+         "responses": ["Graduates of this program have the skills to be executive-level administrative assistants to top-level managers in business or government. Skills include a high level of expertise in keyboarding and computer applications with some accounting. Students will learn how to do effective presentations and be well rounded in all office duties. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Occupational Therapist and Physiotherapist Assistant",
+         "patterns": ["St. Clair college offer program related to occupational therapist and physiotherapist assistant","Courses for occupational therapist and physiotherapist assistant","occupational therapist and physiotherapist assistant"],
+         "responses": ["Graduates will work under the supervision of a Physiotherapist and/or Occupational Therapist to assist in the implementation of therapeutic plans and programs. Graduates will assist in enabling a client’s optimal performance, and help them effectively cope with limitations to function, activities of daily living, leisure and work. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Nursing BScN",
+         "patterns": ["St. Clair college offer program related to nursing BScN","nursing BScN","nursing BScN"],
+         "responses": ["The Nursing degree program is designed to prepare students to provide nursing care in a variety of settings. Graduates will work within the scope of nursing practice and in accordance with the regulations of the College of Nurses of Ontario. Nursing students will be able to care for individual clients or groups, including family members and significant others. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Native Early Childhood Education",
+         "patterns": ["St. Clair college offer program related to native early childhood education","Courses for native early childhood education","native early childhood education"],
+         "responses": ["Native Early Childhood Education program emphasizes traditional healing methods and provides students with the unique opportunity to develop self-awareness and the mental and spiritual healing so often needed by care givers. An appreciation for natiGraduates will be rewarded by their direct work with young children and their families as a member of a multi-disciplinary team. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Native Community Worker",
+         "patterns": ["St. Clair college offer program related to native community worker","Courses for native community worker","native community worker"],
+         "responses": ["Native Community Worker program emphasizes traditional healing methods and provides students with the unique opportunity to develop self-awareness and the mental and spiritual healing so often needed by care givers. A native person are combined with studies to develop specific knowledge and skills in the use of traditional healing methods in the counselling of Native people. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "Music Theatre Performance",
+         "patterns": ["St. Clair college offer program related to music theatre performance","Courses for music theatre performance","music theatre performance"],
+         "responses": ["This is a conservatory-style training program that prepares emerging talents for careers in the entertainment industry. The curriculum focuses on those three areas that comprise the triple threat performer; acting, singing, and dancing. Students train with professional instructors active in their field. Acting is of primary importance with a wider variety of styles and methodologies taught to prepare individuals for stage and film. For more information please refer the link."],
+         "context": [""]
+        },
+	{"tag": "DAB intake",
+         "patterns": ["When is the next intake?","when is the program starts","Data analytics program intake"],
+         "responses": [" We have a fall and winter intake each year."],
+         "context": [""]
+        },
+	{"tag": "Part time work opportunities",
+         "patterns": ["Part time work opportunities","Are their Part time work opportunities available?","Part time job opportunities"],
+         "responses": ["It differs based on the courses. In Full time courses the students in the program are eligible to work up to 20 hour / week during regular school terms/semesters and up to 40 hours a week during scheduled breaks. For more information, please click the link"],
+         "context": [""]
+        },
+	{"tag": "Frequently Asked Questions",
+         "patterns": ["FAQ","intake","Co-op placement","semester breaks","Submission deadline","program code B018 and M018"],
+         "responses": ["These are the commonly asked questions and answers, please click this FAQ page"],
+         "context": [""]
+        },
+	{"tag": "Live Chat Support",
+         "patterns": ["chat support","Student IT support","IT help"],
+         "responses": ["Live support is available 8:00 AM – 12:00 AM EST, 7 days a week. Online support is available through chat, audio, and video. Please follow the link"],
+         "context": [""]
+        },
+	{"tag": "Registrars Office",
+         "patterns": ["Registrars Office"],
+         "responses": ["This office is responsible for maintenance of academic records of students, academic scheduling, registration into courses, providing assistance on academic issues to faculty members and students. For more information click this link"],
+         "context": [""]
+        }
+]
+}
+
